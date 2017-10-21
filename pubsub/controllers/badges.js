@@ -2,7 +2,7 @@
 
 var _ = require('underscore');
 var model = require('../models/badges');
-
+var exports = {};
 //send badges to model
 exports.save = function(req, res, next){
     //preventing from middleware from tampering the req.body
@@ -17,6 +17,8 @@ exports.save = function(req, res, next){
 };
 
 //send badges to pubsub socket in model
-exports.send = function(){};
+exports.send = function(req, res, next){
+    next();
+};
 
 module.exports = exports;
