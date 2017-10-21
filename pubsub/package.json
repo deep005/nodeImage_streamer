@@ -1,0 +1,19 @@
+{
+  "name": "pubsub",
+  "version": "1.0.0",
+  "description": "\"node.js pubsub server\"",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "deep",
+  "license": "ISC",
+  "dependencies": {
+    "axon": "^2.0.3",
+    "express": "^3.0.0",
+    "redis": "^2.8.0",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+  }
+}
